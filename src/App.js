@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
 import ProductSec from "./components/ProductSec";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Home />
         <Skills />
         <ProductSec />
+        <Footer />
       </div>
     </div>
   );

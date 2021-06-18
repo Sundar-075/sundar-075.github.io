@@ -18,14 +18,14 @@ import {
   SiCplusplus,
 } from "react-icons/si";
 import { IconContext } from "react-icons";
-const useStyles = makeStyles((theme) => ({
-  icon_marg: {
-    marginRight: "1.3rem",
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   icon_marg: {
+//     marginRight: "1.3rem",
+//   },
+// }));
 
 function Skills() {
-  const classes = useStyles();
+  // const classes = useStyles();
   const icons = [
     <AiOutlineHtml5 />,
     <DiCss3 />,
@@ -47,16 +47,17 @@ function Skills() {
         <Typography variant="h3" component="h3">
           Skills
         </Typography>
+        <br />
         <div>
-          <IconContext.Provider value={{ size: "4.5rem" }}>
-            {icons.map((data, key) => {
-              return (
-                <span key={key} className={classes.icon_marg}>
-                  {data}
-                </span>
-              );
-            })}
-          </IconContext.Provider>
+          {/* <IconContext.Provider value={{ size: "4.5rem" }}> */}
+          {icons.map((data, key) => {
+            return (
+              <span className="icon_st" key={key}>
+                {data}
+              </span>
+            );
+          })}
+          {/* </IconContext.Provider> */}
         </div>
       </div>
     </Zoom>

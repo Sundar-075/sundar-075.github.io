@@ -4,10 +4,13 @@ import { GitHub, MailOutline, LinkedIn, Instagram } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    background: "#121212",
+    background: "black",
   },
   curs: {
     cursor: "pointer",
+  },
+  tool_h: {
+    minHeight: "90px",
   },
 }));
 
@@ -15,7 +18,7 @@ function NavBar() {
   const classes = useStyles();
   return (
     <AppBar position="static" className={classes.root}>
-      <Toolbar>
+      <Toolbar className={classes.tool_h}>
         <Grid
           container
           spacing={4}
