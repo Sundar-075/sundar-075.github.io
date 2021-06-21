@@ -38,6 +38,7 @@ function Footer() {
               onClick={() => {
                 window.scrollTo(0, 0);
               }}
+              color="secondary"
             >
               <BiUpArrowAlt />
               Back to top
