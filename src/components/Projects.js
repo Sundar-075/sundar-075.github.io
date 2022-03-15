@@ -17,9 +17,9 @@ const TextTypography = withStyles({
 const useStyles = makeStyles((theme) => ({
   card: {
     color: "white",
-    borderRadius: "0px",
+    border: "none",
     background: "#404040",
-    boxShadow: "-5px -5px 0px #383838,5px 5px 0px #484848",
+    boxShadow: "none",
   },
   span_marg: {
     marginRight: "0.8rem",
